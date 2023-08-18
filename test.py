@@ -10,7 +10,7 @@ from time import sleep
 
 st.set_page_config(page_title='SDOH Puerto Rico', page_icon='🗺')
 #import data
-df = pd.read_csv("sdoh.csv")
+df = pd.read_csv("sdoh_v2.csv")
 lab_test_cols = ["albumin_urine", "bun", "creatinine_serum", "creatinine_urine"]
 selected_col = st.selectbox("Select lab test to map", lab_test_cols)
 df = df[["lat", "lon", selected_col]]
