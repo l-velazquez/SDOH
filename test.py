@@ -18,6 +18,7 @@ df = df[["lat", "lon", selected_col]]
 
 title_html = '''
              <h1 style="font-size:28px;color:#444444;text-align:center;">SDOH Puerto Rico</h1>
+             <h2 style="font-size:18px;color:#444444;text-align:center;">{ Kidney Disease Lab Data }</h2>
              '''         
 st.markdown(title_html, unsafe_allow_html=True)
 st.map(df,color="#32a877")
